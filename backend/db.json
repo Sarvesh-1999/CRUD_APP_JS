@@ -33,40 +33,6 @@
         "country": "India",
         "zipcode": "908789"
       }
-    },
-    {
-      "id": "1c13",
-      "firstname": "Demo",
-      "middlename": "",
-      "lastname": "",
-      "dob": "",
-      "email": "",
-      "maritalstatus": "",
-      "phoneno": "",
-      "address": {
-        "street": "",
-        "city": "",
-        "state": "",
-        "country": "",
-        "zipcode": ""
-      }
-    },
-    {
-      "id": "4ef3",
-      "firstname": "Demo",
-      "middlename": "",
-      "lastname": "",
-      "dob": "",
-      "email": "",
-      "maritalstatus": "",
-      "phoneno": "",
-      "address": {
-        "street": "",
-        "city": "",
-        "state": "",
-        "country": "",
-        "zipcode": ""
-      }
     }
   ]
 }

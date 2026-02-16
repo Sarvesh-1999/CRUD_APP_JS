@@ -52,3 +52,13 @@ a {
   background: #ffffff;
   color: #0a1f44;
 }
+
+#employees-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.emp-card {
+  border: 2px solid black;
+  margin: 20px;
+}

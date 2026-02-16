@@ -32,7 +32,7 @@ async function getEditEmployee() {
     streetEle.value = data.address.street;
     stateEle.value = data.address.state;
     countryEle.value = data.address.country;
-    zipCodeEle.value = data.address.maritalstatus;
+    zipCodeEle.value = data.address.zipcode;
     cityEle.value = data.address.city;
   } catch (error) {
     console.log(error);

@@ -7,7 +7,7 @@ const middlewares = jsonServer.defaults();
 
 const port = process.env.PORT || 5000;
 
-// ✅ Enable CORS
+// Enable CORS
 server.use(cors({
   origin: "*",
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],

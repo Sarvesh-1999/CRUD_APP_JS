@@ -2,7 +2,7 @@ const employeesContainerEle = document.getElementById("employees-container");
 
 async function getAllEmployees() {
   try {
-    let resp = await fetch(`http://localhost:5000/employees`);
+    let resp = await fetch(`https://crud-app-js-xw67.onrender.com/employees`);
     let data = await resp.json();
     console.log(data); // [{},{},{},{}]
     displayEmployees(data);
@@ -70,12 +70,19 @@ function displayEmployees(allEmployees) {
 }
 
 async function handleDelete(id) {
-  console.log(id);
   try {
-    let resp = await fetch(`http://localhost:5000/employees/${id}`, {
-      method: "DELETE",
-    });
-    console.log(resp);
+    let resp = await fetch(
+      `https://crud-app-js-xw67.onrender.com/employees/${id}`,
+      { method: "DELETE" },
+    );
+
+    if (!resp.ok) {
+      throw new Error("Delete failed");
+    }
+
+    alert("Employee deleted ✅");
+    employeesContainerEle.innerHTML = "";
+    getAllEmployees();
   } catch (error) {
     console.log(error);
     alert("Unable to delete ❌");

@@ -73,7 +73,10 @@ employeeFormEle.addEventListener("submit", async (e) => {
       body: JSON.stringify(updatedEmployeeData),
     });
     console.log(resp);
+    window.location.href = "AllEmployees.html"
   } catch (err) {
     console.log(err);
   }
 });
+
+
